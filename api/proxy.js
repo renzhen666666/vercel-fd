@@ -1,13 +1,93 @@
 //映射表
+
 const domain_mappings = {
-  'www.example.com': { //访问域名
-    origin: 'origin.example.com', //源站 ip/端口/域名
-    host: 'host.example.com', //访问源站时使用的 Host 头（默认与origin相同）
-    https: true, //是否使用 HTTPS 访问源站
-    cache: true, //是否缓存响应，默认 false
-    cacheTtl: 3600 //缓存时间，单位为秒，默认 3600（1小时）
-  }
+  'gh.etan.fun':{
+    origin: 'github.com',
+    https: true,
+    ip_from: false
+  },
+  'tool.etan.fun' :{
+    origin: 'test-website.3045387398.workers.dev',
+    https: true
+  }, 
+  'hk3-bt.etan.fun' :{
+    origin: 'hk3.etan.fun',
+    https: true
+  }, 
+  'hk4-bt.etan.fun' :{
+    origin: 'hk4.etan.fun',
+    https: true
+  }, 
+  'us1-bt.etan.fun' :{
+    origin: 'us1.etan.fun',
+    https: true
+  }, 
+  'wall-api.etan.fun' :{
+    origin: 'hk4.etan.fun',
+    https: true
+  }, 
+  'oplst.etan.fun' :{
+    origin: 'us2.rz101.com:5244',
+    https: false
+  },
+  'wall.long-gao.com':{
+    origin: 'vue-longgaowall.pages.dev',
+    https: true
+  },
+  'wall-test.long-gao.com':{
+    origin: 'vue-longgaowall.pages.dev',
+    https: true
+  },
+  'long-gao.com':{
+    origin: 'wall-d.rz7.top',
+    https: true
+  },
+  'api-wall.long-gao.com':{
+    origin: '38.246.251.121',
+    host: 'api.long-gao.com',
+    https: true
+  },
+  's.etan.fun':{
+    origin: 'staticfile-e9s.pages.dev',
+    https: true
+  },
+  's-o.etan.fun':{
+    origin: 'static-b.rz7.top',
+    https: true
+  },
+  'cdn.etan.fun': {
+    origin: 'imgbed-cfpages.etan.fun',
+    https: true,
+    cache: true,
+    cacheTtl: 86400 // 1天
+  },
+  'cdn.long-gao.com': {
+    origin: 'imgbed-cfpages.etan.fun',
+    https: true,
+    cache: true,
+    cacheTtl: 86400 // 1天
+  },
+  'f.rz7.top': {
+    origin: 'imgbed-cfpages.etan.fun',
+    https: true,
+    cache: true,
+    cacheTtl: 86400 // 1天
+  },
+  'blog.etan.fun': {
+    origin: 'blog-cfpages.etan.fun',
+    https: true
+  },
+  'gemini.etan.fun': {
+    origin: 'gemini.google.com',
+    https: true,
+    ip_from: false
+  },
+  'wall-vc.long-gao.com':{
+    origin: 'vue-longgaowall.pages.dev',
+    https: true
+  },
 }
+
 
 export const config = {
   runtime: 'edge',

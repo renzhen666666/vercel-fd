@@ -86,6 +86,16 @@ const domain_mappings = {
     origin: 'vue-longgaowall.pages.dev',
     https: true
   },
+  'cdn-vc.etan.fun': {
+    origin: 'imgbed-cfpages.etan.fun',
+    https: true,
+    cache: true,
+    cacheTtl: 86400 // 1天
+  },
+  'proxy.etan.fun': {
+    origin: 'all-cdn-in-one-imaging.pages.dev',
+    https: true
+  }
 }
 
 
